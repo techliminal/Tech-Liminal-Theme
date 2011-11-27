@@ -1,11 +1,28 @@
 /*
 	Theme Name: Tech Liminal
-	Theme URL: http://techliminal.com
+	Theme URL: http://techliminal.com/theme
 	Description: Tech Liminal is based on the Genesis Framework
-	Author: Tech Liminal
+	Author: Tech Liminal (Anca Mosoiu anca@techliminal.com)
 	Author URI: http://www.techliminal.com
-	Version: 0.1
+	Version: 1.0 
 	Template: genesis
+*/
+
+/* COLORS 
+  Red-Orange: #FF3C0E (menu bar, highlighted links)
+  Orange: #FF6F00 (mouseover menu)
+  Green: #C3FFA1 (mouseover menu)
+  Green Widget Titles: #5F9F04
+  Chartreuse:  #ECFA93
+
+Highlight color: #E8408B / #FFABD0
+Orange Container Color: FF5305 / #FED21B
+Green Headings: #98C709 / #DAF542
+Link Color (Teal): #0E9CB6 / #12E6F1
+Yellow Highlight:  f5f219
+
+Greys:  Light: #ccd4d8" Medium: "#abbbc4" Dark: "#7c93a0" 
+
 */
 
 /* Table of Contents
@@ -270,7 +287,7 @@ li li a .sf-sub-indicator {
 
 #header ul.nav li,
 #header ul.menu li {
-	background-color: #333;
+	background-color: #FF3C0E;
 	float: left;
 	list-style-type: none;
 	text-transform: uppercase;
@@ -296,8 +313,8 @@ li li a .sf-sub-indicator {
 #header ul.menu .current_page_item a,
 #header ul.menu .current-cat a,
 #header ul.menu .current-menu-item a {
-	background-color: #000;
-	color: #fff;
+	background-color: #FF6F00;
+	color: #C3FFA1;
 }
 
 #header ul.nav li li a,
@@ -306,8 +323,7 @@ li li a .sf-sub-indicator {
 #header ul.menu li li a,
 #header ul.menu li li a:link,
 #header ul.menu li li a:visited {
-	background-color: #333;
-	border: 1px solid #666;
+	background-color: #FF3C0E;
 	border-top-width: 0;
 	color: #fff;
 	font-size: 12px;
@@ -321,7 +337,8 @@ li li a .sf-sub-indicator {
 #header ul.nav li li a:active,
 #header ul.menu li li a:hover,
 #header ul.menu li li a:active {
-	background-color: #000;
+	background-color: #C3FFA1;
+	color: #C3FFA1;
 }
 
 #header ul.nav li ul,
@@ -355,17 +372,20 @@ li li a .sf-sub-indicator {
 ------------------------------------------------------------ */
 
 #nav {
-	background-color: #333;
-	border-bottom: 1px solid #666;
-	clear: both;
+  border-top:2px solid #FF3C0E;
+  border-left:2px solid #FF3C0E;
+  border-right:2px solid #FF3C0E;
+	background-color: #FF3C0E;
+  clear: both;
 	color: #fff;
 	margin: 0 auto;
 	overflow: hidden;
 	text-transform: uppercase;
-	width: 960px;
+	width: 956px;
 }
 
 #nav ul {
+  margin-left:5px;
 	float: left;
 	width: 100%;
 }
@@ -389,15 +409,14 @@ li li a .sf-sub-indicator {
 #nav .current_page_item a,
 #nav .current-cat a,
 #nav .current-menu-item a {
-	background-color: #000;
-	color: #fff;
+	background-color: #fff;
+	color: #000;
 }
 
 #nav li li a,
 #nav li li a:link,
 #nav li li a:visited {
-	background-color: #333;
-	border: 1px solid #666;
+	background-color: #FF3C0E;
 	border-top-width: 0;
 	color: #fff;
 	font-size: 12px;
@@ -409,7 +428,8 @@ li li a .sf-sub-indicator {
 
 #nav li li a:hover,
 #nav li li a:active {
-	background-color: #000;
+	background-color: #FF6F00;
+	color: #C3FFA1;
 }
 
 #nav li ul {
