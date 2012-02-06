@@ -16,12 +16,13 @@
   Chartreuse:  #ECFA93
 
 Highlight color: #E8408B / #FFABD0
-Orange Container Color: FF5305 / #FED21B
-Green Headings: #98C709 / #DAF542
-Link Color (Teal): #0E9CB6 / #12E6F1
-Yellow Highlight:  f5f219
+Orange Container Color: #FF5305 / #FED21B
+Green Headings: 	#98C709 / #DAF542
+Link Color (Teal): 	#0E9CB6 / #12E6F1
+Yellow Highlight:  	#f5f219
+Grey box:			#ccc;
 
-Greys:  Light: #ccd4d8" Medium: "#abbbc4" Dark: "#7c93a0" 
+Greys:  Light: #ccd4d8 Medium: #abbbc4 Dark: #7c93a0
 
 */
 
@@ -59,6 +60,7 @@ Greys:  Light: #ccd4d8" Medium: "#abbbc4" Dark: "#7c93a0"
 * Primary / Secondary Sidebars
 * Tag Cloud
 * Dropdowns
+* Widgets
 * Featured Page / Post
 * User Profile
 * Buttons
@@ -69,8 +71,16 @@ Greys:  Light: #ccd4d8" Medium: "#abbbc4" Dark: "#7c93a0"
 * Footer
 * Comments
 * Gravity Forms
+* Homepage
+* All-In-One Event Calendar
 
 */
+
+/* Import Fonts
+------------------------------------------------------------ */
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
 
 /* Defaults
 ------------------------------------------------------------ */
@@ -78,8 +88,6 @@ Greys:  Light: #ccd4d8" Medium: "#abbbc4" Dark: "#7c93a0"
 body,
 h1,
 h2,
-h2 a,
-h2 a:visited,
 h3,
 h4,
 h5,
@@ -89,7 +97,7 @@ select,
 textarea {
 	color: #333;
 	font-family: Arial, Helvetica, Tahoma, sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: normal;
 	line-height: 22px;
 	margin: 0;
@@ -126,13 +134,12 @@ ol li {
 	list-style-type: decimal;
 }
 
-
 /* Hyperlinks
 ------------------------------------------------------------ */
 
 a,
 a:visited {
-	color: #25a;
+	color: #0E9CB6;
 	text-decoration: none;
 }
 
@@ -149,7 +156,7 @@ a img {
 ------------------------------------------------------------ */
 
 body {
-	background-color: #fff;
+	background-color: #ccd4d8;
 }
 
 
@@ -167,10 +174,30 @@ body {
 ------------------------------------------------------------ */
 
 #header {
-	margin: 0 auto;
-	min-height: 80px;
-	overflow: hidden;
-	width: 960px;
+	margin: 0px 10px 0px 10px;
+	padding-bottom:10px;
+	padding-top:20px;
+	width: 940px;
+	min-height:100px;
+}
+
+#header #logo{
+	float:left;
+	width: 200px;
+}
+
+#header #contact_info{
+	width:300px;
+	float:right;
+	text-align:right;
+	font-size:14px;
+	line-height:18px;
+}
+
+#contact_info h4.widgettitle{
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:0px;
 }
 
 #title-area {
@@ -205,31 +232,13 @@ body {
 /* Image Header - Partial Width
 ------------------------------------------------------------ */
 
-.header-image #title-area,
-.header-image #title,
-.header-image #title a {
-	display: block;
-	float: left;
-	height: 80px;
-	overflow: hidden;
-	padding: 0;
-	text-indent: -9999px;
-	width: 400px;
-}
-
-.header-image #description {
-	display: block;
-	overflow: hidden;
-}
-
-
 /* Image Header - Full Width
 ------------------------------------------------------------ */
 
 .header-full-width #title-area,
 .header-full-width #title,
 .header-full-width #title a {
-	width: 960px;
+	width: 940px;
 }
 
 
@@ -381,8 +390,11 @@ li li a .sf-sub-indicator {
 	margin: 0 auto;
 	overflow: hidden;
 	text-transform: uppercase;
-	width: 956px;
+	width: 936px;
+	font-family: "Oswald", Helvetica, Arial, sans-serif;
+
 }
+
 
 #nav ul {
   margin-left:5px;
@@ -398,7 +410,7 @@ li li a .sf-sub-indicator {
 #nav li a {
 	color: #fff;
 	display: block;
-	font-size: 13px;
+	font-size: 14px;
 	padding: 7px 10px 5px;
 	position: relative;
 	text-decoration: none;
@@ -424,6 +436,7 @@ li li a .sf-sub-indicator {
 	position: relative;
 	text-transform: none;
 	width: 138px;
+
 }
 
 #nav li li a:hover,
@@ -610,13 +623,14 @@ li li a .sf-sub-indicator {
 
 #content-sidebar-wrap {
 	float: left;
-	width: 790px;
+	width: 780px;
 }
 
 .content-sidebar #content-sidebar-wrap,
 .full-width-content #content-sidebar-wrap,
 .sidebar-content #content-sidebar-wrap {
-	width: 960px;
+	width: 940px;
+	margin:0px 10px;
 }
 
 .sidebar-content-sidebar #content-sidebar-wrap,
@@ -630,12 +644,13 @@ li li a .sf-sub-indicator {
 
 #content {
 	float: left;
-	width: 470px;
+	width: 520px;
+	margin:0 10px;
 }
 
 .content-sidebar #content,
 .sidebar-content #content {
-	width: 640px;
+	width: 620px;
 }
 
 .sidebar-content #content,
@@ -644,8 +659,13 @@ li li a .sf-sub-indicator {
 }
 
 .full-width-content #content {
-	width: 960px;
+	width: 940px;
+	margin:0px;
 }
+
+
+/* Internal Formatting
+------------------------------------------------- */
 
 blockquote {
 	margin: 5px 15px 20px;
@@ -788,6 +808,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 5px;
+	font-family: "Oswald", Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -806,7 +827,7 @@ h2 a:visited {
 }
 
 h2 a:hover {
-	color: #25a;
+	color: #0E9CB6;
 	text-decoration: none;
 }
 
@@ -819,17 +840,11 @@ h4 {
 }
 
 .widget-area h4 {
-	background-color: #f5f5f5;
-	border-bottom: 1px solid #ddd;
-	font-size: 12px;
+	background-color: #DAF542;
+	font-size: 14px;
 	font-weight: bold;
 	padding: 5px 5px 5px 10px;
 	text-transform: uppercase;
-}
-
-.widget-area h4 a {
-	color: #333;
-	text-decoration: none;
 }
 
 #footer-widgets h4 {
@@ -1063,7 +1078,8 @@ p.wp-caption-text {
 	float: right;
 	font-size: 13px;
 	line-height: 20px;
-	width: 300px;
+	width: 280px;
+	margin-left:10px;
 }
 
 .sidebar p {
@@ -1137,29 +1153,46 @@ p.wp-caption-text {
 	width: 128px;
 }
 
+/* Widgets
+------------------------------------------------------------ */
+
+.widget{
+
+}
+
+.widgettitle {
+	text-transform:uppercase;
+}
+
 
 /* Featured Page / Post
 ------------------------------------------------------------ */
 
 .featuredpage,
 .featuredpost {
-	clear: both;
-	margin: 0 0 15px;
 	overflow: hidden;
 }
 
 .featuredpage .page,
 .featuredpost .post {
-	border-bottom: 1px solid #ddd;
 	margin: 0 0 5px;
 	overflow: hidden;
-	padding: 5px 10px 10px;
+	padding: 10px 10px;
 }
 
 .more-from-category {
 	padding: 5px 10px 0;
 }
 
+.featuredpage h2, .featuredpost h2,
+.featuredpage h2 a, .featuredpost h2 a{
+	font-size:16px;
+	line-height:24px;
+}
+
+.featuredpage h2 a, .featuredpost h2 a{
+	
+}
 
 /* User Profile
 ------------------------------------------------------------ */
@@ -1211,11 +1244,6 @@ div.gform_footer input.button:hover,
 
 /* Search Form
 ------------------------------------------------------------ */
-
-#header .searchform {
-	float: right;
-	padding: 30px 0 0;
-}
 
 .sidebar .searchform {
 	padding: 5px 0 0 10px;
@@ -1515,4 +1543,59 @@ div.gform_wrapper .gform_footer {
 	border: none;
 	margin: 0;
 	padding: 0;
+}
+
+/* Homepage
+------------------------------------------------------------ */
+
+#home-top{
+	min-height: 353px;
+	position:relative;
+}
+
+#home-top-left{
+	width:400px;
+	background: #ECFA93;
+	margin:0px 540px 0px 0px;
+}
+
+#home-top-right{
+	width:500px;
+	margin:0px 0px 0px 10px;
+	padding:10px;
+	position:absolute;
+	top:0px;
+	left:410px;
+	background-color: #abbbc4;
+}
+
+#home-middle{
+	margin-top:10px;
+}
+	
+#home-middle .widget{
+	width:300px;
+	margin-left:20px;
+	float:left;
+}
+
+#home-middle .widgettitle{
+	background-color: #98C709;
+	color: #fff;
+	padding:5px 10px 5px 10px;
+}
+
+#home-middle .widget:first-child{
+	margin-left:0px;
+}
+
+#home-middle .post{
+	border-bottom: 2px dotted #ccd4d8;
+}
+
+/* Homepage
+------------------------------------------------------------ */
+
+.widget_ai1ec_agenda_widget{
+	font-size:13px;
 }
