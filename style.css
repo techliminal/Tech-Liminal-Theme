@@ -80,7 +80,7 @@ Greys:  Light: #ccd4d8 Medium: #abbbc4 Dark: #7c93a0
 ------------------------------------------------------------ */
 
 @import url(http://fonts.googleapis.com/css?family=Oswald);
-
+@import url(http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic);
 
 /* Defaults
 ------------------------------------------------------------ */
@@ -97,9 +97,9 @@ select,
 textarea {
 	color: #333;
 	font-family: Arial, Helvetica, Tahoma, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: normal;
-	line-height: 22px;
+	line-height: 20px;
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
@@ -381,7 +381,7 @@ li li a .sf-sub-indicator {
 ------------------------------------------------------------ */
 
 #nav {
-  border-top:2px solid #FF3C0E;
+  border-top:5px solid #FF3C0E;
   border-left:2px solid #FF3C0E;
   border-right:2px solid #FF3C0E;
 	background-color: #FF3C0E;
@@ -391,7 +391,7 @@ li li a .sf-sub-indicator {
 	overflow: hidden;
 	text-transform: uppercase;
 	width: 936px;
-	font-family: "Oswald", Helvetica, Arial, sans-serif;
+	font-family: "Asap", Helvetica, Arial, sans-serif;
 
 }
 
@@ -411,9 +411,11 @@ li li a .sf-sub-indicator {
 	color: #fff;
 	display: block;
 	font-size: 14px;
-	padding: 7px 10px 5px;
+	padding: 7px 10px 7px;
 	position: relative;
 	text-decoration: none;
+	letter-spacing: 1.5px;
+	font-weight:700;
 }
 
 #nav li a:hover,
@@ -808,7 +810,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 5px;
-	font-family: "Oswald", Helvetica, Arial, sans-serif;
+	font-family: "Asap", Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -817,6 +819,12 @@ h2 a,
 h2 a:visited {
 	font-size: 24px;
 	line-height: 30px;
+}
+
+h1.entry-title{
+	font-family: Oswald, Helvetica, Arial, sans-serif;
+	padding-bottom:10px;
+	
 }
 
 .taxonomy-description h1,
@@ -845,6 +853,7 @@ h4 {
 	font-weight: bold;
 	padding: 5px 5px 5px 10px;
 	text-transform: uppercase;
+	letter-spacing:1px;
 }
 
 #footer-widgets h4 {
@@ -1186,7 +1195,7 @@ p.wp-caption-text {
 
 .featuredpage h2, .featuredpost h2,
 .featuredpage h2 a, .featuredpost h2 a{
-	font-size:16px;
+	font-size:18px;
 	line-height:24px;
 }
 
@@ -1559,6 +1568,10 @@ div.gform_wrapper .gform_footer {
 	margin:0px 540px 0px 0px;
 }
 
+#home-top-left h2 a{
+	padding-top:10px;
+}
+
 #home-top-right{
 	width:500px;
 	margin:0px 0px 0px 10px;
@@ -1581,7 +1594,7 @@ div.gform_wrapper .gform_footer {
 
 #home-middle .widgettitle{
 	background-color: #98C709;
-	color: #fff;
+	color: #000;
 	padding:5px 10px 5px 10px;
 }
 
@@ -1590,7 +1603,7 @@ div.gform_wrapper .gform_footer {
 }
 
 #home-middle .post{
-	border-bottom: 2px dotted #ccd4d8;
+	border-bottom: 1px dashed #ccd4d8;
 }
 
 /* Homepage
