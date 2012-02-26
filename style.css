@@ -415,7 +415,7 @@ li li a .sf-sub-indicator {
 	position: relative;
 	text-decoration: none;
 	letter-spacing: 1.5px;
-	font-weight:700;
+	font-weight:400;
 }
 
 #nav li a:hover,
@@ -1575,11 +1575,21 @@ div.gform_wrapper .gform_footer {
 #home-top-right{
 	width:500px;
 	margin:0px 0px 0px 10px;
-	padding:10px;
 	position:absolute;
 	top:0px;
 	left:410px;
 	background-color: #abbbc4;
+}
+
+#home-top-left, #home-top-right{
+	padding:10px;
+	height:320px;
+	overflow:hidden;
+}
+
+#home-top-right .widget{
+	height:320px;
+	overflow:hidden;
 }
 
 #home-middle{
