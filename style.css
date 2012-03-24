@@ -1616,9 +1616,13 @@ div.gform_wrapper .gform_footer {
 	border-bottom: 1px dashed #ccd4d8;
 }
 
-/* Homepage
+/* All-In One Event Calendar
 ------------------------------------------------------------ */
 
 .widget_ai1ec_agenda_widget{
 	font-size:13px;
+}
+
+.ai1ec-recurrence{
+	display:none;
 }

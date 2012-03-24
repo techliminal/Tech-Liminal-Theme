@@ -13,6 +13,7 @@ define( 'CHILD_THEME_URL', 'http://techliminal.com' );
 /** Add new image sizes */
 add_image_size( 'home-middle', 300, 120, TRUE );
 add_image_size( 'home-mini', 60, 60, TRUE );
+add_image_size( 'tiny-feature', 24, 48, TRUE);
  
 // Turn on random header image rotation by default.
 add_theme_support( 'custom-header', array( 'random-default' => true ) );
