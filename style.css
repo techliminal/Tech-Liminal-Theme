@@ -262,21 +262,6 @@ li.sfHover {
 	padding-right: 25px;
 }
 
-li a .sf-sub-indicator {
-	background: url(images/arrow-down.png) no-repeat;
-	height: 10px;
-	position: absolute;
-	right: 10px;
-	text-indent: -9999px;
-	top: 13px;
-	width: 10px;
-}
-
-li li a .sf-sub-indicator {
-	background: url(images/arrow-right.png) no-repeat;
-	top: 10px;
-}
-
 
 /* Header Right Navigation
 ------------------------------------------------------------ */
@@ -1427,7 +1412,6 @@ div.gform_footer input.button:hover,
 }
 
 #footer .gototop a {
-	background: url(images/footer-top.png) no-repeat center left;
 	padding: 2px 0 2px 18px;
 }
 
