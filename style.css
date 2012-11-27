@@ -1223,31 +1223,67 @@ p.wp-caption-text {
 ------------------------------------------------------------ */
 
 div.gform_footer input.button,
+.button, 
 .enews #subbutton,
 .reply a,
 .reply a:visited,
 .searchsubmit,
 #submit {
-	background-color: #333;
-	border: 1px solid #666;
 	color: #fff;
+	border: solid 1px #a6230;
+	background: #ff3c0e;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FF3COE), to(#FF8DOE));
+	background: -moz-linear-gradient(top,  #FF3COE,  #FF8DOE);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+	display: inline-block;
+	outline: none;
 	cursor: pointer;
-	font-size: 12px;
-	font-weight: normal;
-	padding: 3px 5px;
+	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
 }
 
 div.gform_footer input.button:hover,
+.button,
 .enews #subbutton:hover,
 .reply a:hover,
 .searchsubmit:hover,
 #submit:hover {
-	background-color: #000;
-	border: 1px solid #666;
-	color: #fff;
 	text-decoration: none;
+}
+
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+.orange {
+	color: #fef4e9;
+	border: solid 1px #da7c0c;
+	background: #f78d1d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+.orange:hover {
+	background: #f47c20;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+	background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+.orange:active {
+	color: #fcd3a5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
 }
 
 
@@ -1532,12 +1568,9 @@ div.gform_wrapper textarea {
 	color: #333;
 	font-family: Arial, Helvetica, Tahoma, sans-serif;
 	font-size: 12px !important;
-	padding: 4px 5px !important;
+	/* padding: 4px 5px !important; */
 }
 
-div.gform_footer input.button {
-	color: #fff;
-}
 
 div.gform_wrapper .ginput_complex label {
 	font-size: 12px;
@@ -1612,3 +1645,143 @@ div.gform_wrapper .gform_footer {
 .widget_ai1ec_agenda_widget{
 	font-size:13px;
 }
+
+/* buttons */
+
+/* CSS Button test 1 http://webdesignerwall.com/tutorials/css3-gradient-buttons */
+/*
+input[type="button"],
+input[type="submit"],
+.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+input:hover[type="button"],
+input:hover[type="submit"],
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+.orange {
+	color: #fef4e9;
+	border: solid 1px #da7c0c;
+	background: #f78d1d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+.orange:hover {
+	background: #f47c20;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+	background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+.orange:active {
+	color: #fcd3a5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+}
+
+*/
+
+/* CSS Button test 2 http://cssgradientbutton.com/ */
+
+/*
+.button_example{
+border:1px solid #ffc826; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; text-align: center; color: #FFFFFF; background-color: #ffd65e;
+ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffd65e), color-stop(100%, #febf04));
+ background-image: -webkit-linear-gradient(top, #ffd65e, #febf04);
+ background-image: -moz-linear-gradient(top, #ffd65e, #febf04);
+ background-image: -ms-linear-gradient(top, #ffd65e, #febf04);
+ background-image: -o-linear-gradient(top, #ffd65e, #febf04);
+ background-image: linear-gradient(top, #ffd65e, #febf04);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffd65e, endColorstr=#febf04);
+}
+
+.button_example:hover{
+ border:1px solid #f7b800; background-color: #ffc92b;
+ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffc92b), color-stop(100%, #ce9a01));
+ background-image: -webkit-linear-gradient(top, #ffc92b, #ce9a01);
+ background-image: -moz-linear-gradient(top, #ffc92b, #ce9a01);
+ background-image: -ms-linear-gradient(top, #ffc92b, #ce9a01);
+ background-image: -o-linear-gradient(top, #ffc92b, #ce9a01);
+ background-image: linear-gradient(top, #ffc92b, #ce9a01);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffc92b, endColorstr=#ce9a01);
+}
+</style></head>
+<body>
+
+<form> <input type="button" class="button_example" value="PREVIEW BUTTON" /> </form>
+
+</body>
+</html>
+*/
+/* CSS Button Test 3  http://gradients.glrzad.com/ */
+/*
+background-image: linear-gradient(bottom, rgb(255,38,0) 8%, rgb(255,234,0) 54%);
+background-image: -o-linear-gradient(bottom, rgb(255,38,0) 8%, rgb(255,234,0) 54%);
+background-image: -moz-linear-gradient(bottom, rgb(255,38,0) 8%, rgb(255,234,0) 54%);
+background-image: -webkit-linear-gradient(bottom, rgb(255,38,0) 8%, rgb(255,234,0) 54%);
+background-image: -ms-linear-gradient(bottom, rgb(255,38,0) 8%, rgb(255,234,0) 54%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.08, rgb(255,38,0)),
+	color-stop(0.54, rgb(255,234,0))
+);
+*/
+
+/* Old gforms buttons 
+
+div.gform_footer input.button,
+.enews #subbutton,
+.reply a,
+.reply a:visited,
+.searchsubmit,
+#submit {
+	background-color: #333;
+	border: 1px solid #666;
+	color: #fff;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 3px 5px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+div.gform_footer input.button:hover,
+.enews #subbutton:hover,
+.reply a:hover,
+.searchsubmit:hover,
+#submit:hover {
+	background-color: #000;
+	border: 1px solid #666;
+	color: #fff;
+	text-decoration: none;
+}
+1561
+div.gform_footer input.button {
+	color: #fff;
+}
+
+
+*/
