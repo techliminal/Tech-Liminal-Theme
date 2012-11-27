@@ -712,7 +712,7 @@ p.subscribe-to-comments {
 .one-half,
 .three-sixths,
 .two-fourths {
-	width: 48%;
+	width: 47%;
 }
 
 .one-third,
@@ -1514,9 +1514,8 @@ div.gform_wrapper input,
 div.gform_wrapper select,
 div.gform_wrapper textarea {
 	color: #333;
-	font-family: Arial, Helvetica, Tahoma, sans-serif;
 	font-size: 12px !important;
-	padding: 4px 5px !important;
+	padding: 4px 0 !important;
 }
 
 div.gform_footer input.button {
