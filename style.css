@@ -1597,21 +1597,23 @@ div.gform_wrapper .gform_footer {
 
 #home-top-left{
 	width:400px;
+	height:320px;
 	background: #ECFA93;
 	margin:0px 540px 0px 0px;
+	padding: 10px;
 }
 
 #home-top-left h2 a{
 	padding-top:10px;
 }
+#home-top-left li {
+     margin-left: 25px;
+}
 
 #home-top-right{
-	width:500px;
-	margin:0px 0px 0px 10px;
-	padding:10px;
 	position:absolute;
 	top:0px;
-	left:410px;
+	right:0;
 	background-color: #abbbc4;
 }
 
