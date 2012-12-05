@@ -7,7 +7,7 @@
 require_once( get_template_directory() . '/lib/init.php' );
 
 /** Child theme (do not remove) */
-define( 'CHILD_THEME_NAME', 'Tech Limial Child Theme' );
+define( 'CHILD_THEME_NAME', 'Tech Liminal Child Theme' );
 define( 'CHILD_THEME_URL', 'http://techliminal.com' );
 
 /** Add new image sizes */
