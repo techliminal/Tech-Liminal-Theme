@@ -1310,7 +1310,7 @@ div.gform_footer input.button:hover,
 	font-size: 12px;
 	margin: 5px 2px 0 0;
 	padding: 4px 5px;
-	width: 195px;
+	width: 175px;
 }
 
 
@@ -1425,8 +1425,8 @@ div.gform_footer input.button:hover,
 
 .footer-widgets-1 {
 	float: left;
-	padding: 0 20px 0 0;
-	width: 300px;
+	padding: 0 20px 0 10px;
+	width: 290px;
 }
 
 .footer-widgets-2 {
@@ -1436,8 +1436,18 @@ div.gform_footer input.button:hover,
 
 .footer-widgets-3 {
 	float: right;
-	width: 300px;
+	width: 280px;
 }
+
+/* Exception for homepage since 3rd column and sidebar are different widths */
+.home .footer-widgets-3 {
+     width: 300px;
+}
+
+.widget-area .widget:nth-of-type(n+2) {
+     margin-top: 15px;
+}
+
 
 
 /* Footer
@@ -1593,6 +1603,10 @@ div.gform_wrapper .gform_footer {
 	border: none;
 	margin: 0;
 	padding: 0;
+}
+
+#sidebar .gform_wrapper {
+     padding: 0 12px;
 }
 
 /* Homepage
