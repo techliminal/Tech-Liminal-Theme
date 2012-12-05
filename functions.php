@@ -70,4 +70,15 @@ function tl_header(){
 <?
 }
 
+//Remove byline from events posts
+add_filter('genesis_post_info', 'custom_post_info');
+function custom_post_info($post_info) {
+     global $post;
+     if ( $post->post_type === 'ai1ec_event' ) {
+          return;
+     } else {
+          return $post_info;
+     }
+}
+
 ?>
