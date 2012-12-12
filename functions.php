@@ -70,15 +70,36 @@ function tl_header(){
 <?
 }
 
-//Remove byline from events posts
+// Remove byline from events posts
 add_filter('genesis_post_info', 'custom_post_info');
 function custom_post_info($post_info) {
-     global $post;
-     if ( $post->post_type === 'ai1ec_event' ) {
-          return;
-     } else {
-          return $post_info;
-     }
+  global $post;
+  if ( $post->post_type === 'ai1ec_event' ) {
+    return;
+  } else {
+    return $post_info;
+  }
 }
 
+// Display event post meta with event categories and tags
+add_filter('genesis_post_meta', 'event_post_meta');
+function event_post_meta($post_meta) {
+  global $post;
+	if ( $post->post_type === 'ai1ec_event' ) {
+	
+  	$before_category = __( 'Filed Under: ', 'genesis' );
+  	$before_tag = __( 'Tagged With: ', 'genesis' );
+  	
+  	$event_categories = get_the_term_list( $post->ID, 'events_categories', $before_category, ', ' );
+  	$event_tags = get_the_term_list( $post->ID, 'events_tags', $before_tag, ', ' );
+  	
+  	$post_meta = sprintf( '<span class="categories">%s</span><span class="tags">%s</span>', $event_categories, $event_tags );
+  	
+  	return $post_meta;
+  	
+	} else {
+  	return $post_meta;
+	}
+}
+		
 ?>
