@@ -14,13 +14,7 @@ define( 'CHILD_THEME_URL', 'http://techliminal.com' );
 add_image_size( 'home-middle', 300, 120, TRUE );
 add_image_size( 'home-mini', 60, 60, TRUE );
 add_image_size( 'tiny-feature', 24, 48, TRUE);
- 
-// Turn on random header image rotation by default.
-add_theme_support( 'custom-header', array( 'random-default' => true ) );
-
-// Add support for custom backgrounds
-add_custom_background();
- 
+  
 /* --------------------  Widget Areas ------------------------ */
 
 genesis_register_sidebar(array(
@@ -70,9 +64,11 @@ function tl_header(){
 <?
 }
 
+/* ---------------------------  Event Posts --------------------- */
+
 // Remove byline from events posts
-add_filter('genesis_post_info', 'custom_post_info');
-function custom_post_info($post_info) {
+add_filter('genesis_post_info', 'tl_custom_post_info');
+function tl_custom_post_info($post_info) {
   global $post;
   if ( $post->post_type === 'ai1ec_event' ) {
     return;
@@ -101,5 +97,10 @@ function event_post_meta($post_meta) {
   	return $post_meta;
 	}
 }
-		
-?>
+
+/* ---------------------------  JQuery --------------------- */
+
+add_action('wp_enqueue_scripts', 'tl_load_scripts');
+function tl_load_scripts(){
+	wp_enqueue_script('tl-stripe', get_stylesheet_directory_uri() .'/assets/js/stripe.js',  array('jquery'), false, true );
+}
