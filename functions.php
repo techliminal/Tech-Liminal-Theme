@@ -59,10 +59,10 @@ function tl_header(){
 	</div>
   <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" id="contact_info">
   	<h4 class="widgettitle">Find Us</h4>
-    <span itemprop="streetAddress"><a href="/find-us" title="Get a map and directions">268 14th Street</a></span><br/>
+    <span itemprop="streetAddress"><a href="/find-us" title="Get a map and directions">555 12th St. #110</a></span><br/>
     <span itemprop="addressLocality">Oakland</span>,
     <span itemprop="addressRegion">CA</span>
-    <span itemprop="postalCode">94612</span><br/>
+    <span itemprop="postalCode">94607</span><br/>
     <span itemprop="telephone">(510) 832-3401</span><br/>
   	<span itemprop="email"><a href="/contact-us" >info@techliminal.com</a></span>
 
